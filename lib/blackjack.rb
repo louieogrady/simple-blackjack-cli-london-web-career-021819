@@ -32,8 +32,19 @@ def initial_round
   deal_card
 end
 
-def hit?
-  # code hit? here
+def hit?(number)
+prompt_user
+get_user_input
+if answer == "h" 
+deal_card
+#increment the player's card total by whatever number is returned by deal_card
+display_card_total
+elsif answer == "s"
+display_card_total
+else 
+invalid_command
+end
+end
 end
 
 def invalid_command
