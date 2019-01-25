@@ -13,6 +13,8 @@ end
 
 def prompt_user
   puts "Type 'h''to hit 's' to stay"
+  prompt_user
+  get_user_input
 end
 
 def get_user_input
